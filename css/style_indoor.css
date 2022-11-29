@@ -1,0 +1,45 @@
+.indoor {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+
+p {
+    color: whitesmoke;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 22px;
+}
+
+.indoor-row {
+    margin-top: 5%;
+    display: inline-block;
+    justify-content: center;
+}
+
+.indoor-col {
+    backdrop-filter: blur(20px) brightness(110%);
+    flex-basis: 31%;
+    background-color: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: all 0.4s ease 0.4s;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.indoor-col img {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h4 {
+    font-weight: bolder;
+    color: aliceblue;
+}

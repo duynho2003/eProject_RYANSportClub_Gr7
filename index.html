@@ -121,21 +121,18 @@
                     <div class="feature-item set-bg" data-setbg="img/feature/feature-1.jpg">
                         <h3>GROUP CLASSES</h3>
                         <p>The Sopranos manages to address the biases<br /> and benefits of therapy</p>
-                        <a href="#" class="primary-btn f-btn">Read More</a>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="feature-item set-bg" data-setbg="img/feature/feature-2.jpg">
                         <h3>PERSONAL TRAINING</h3>
                         <p>Strep throat is very common during the flu<br /> seasons and it can be preceded</p>
-                        <a href="#" class="primary-btn f-btn">Read More</a>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="feature-item set-bg" data-setbg="img/feature/feature-3.jpg">
                         <h3>Sports Nutrition</h3>
                         <p>A Human Being’s right to life implies his right to<br /> have the free and unrestricted</p>
-                        <a href="#" class="primary-btn f-btn">Read More</a>
                     </div>
                 </div>
             </div>
@@ -155,7 +152,6 @@
                         <p class="long-details">Success isn’t really that difficult. There is a significant portion of
                             the population here that actually want and need success to be hard! For
                             those of you who are serious about having more, doing more, giving more and being more.</p>
-                        <a href="#" class="primary-btn about-btn">Learn More</a>
                     </div>
                 </div>
                 <div class="col-lg-6">
@@ -187,9 +183,8 @@
             <div class="row">
                 <div class="col-lg-3 col-sm-6">
                     <div class="classes-item set-bg" data-setbg="img/classes/class-1.jpg">
-                        <h4>Ryan Sport Club Level 1</h4>
+                        <h4>Ryan Sports Club Level 1</h4>
                         <p>Sufferers around the globe will be happy to hear that there are sleep apnea remedies.</p>
-                        <a href="#" class="primary-btn class-btn">Read More</a>
                     </div>
                 </div>
                 <div class="col-lg-3 col-sm-6">
@@ -197,21 +192,18 @@
                         <h4>BootCamp</h4>
                         <p>The oil, also called linseed oil, has many industrial uses – it is an important ingredient
                         </p>
-                        <a href="#" class="primary-btn class-btn">Read More</a>
                     </div>
                 </div>
                 <div class="col-lg-3 col-sm-6">
                     <div class="classes-item set-bg" data-setbg="img/classes/class-3.jpg">
                         <h4>Energy Blast</h4>
                         <p>It is a very common occurrence like cold or fever depending upon your lifestyle. </p>
-                        <a href="#" class="primary-btn class-btn">Read More</a>
                     </div>
                 </div>
                 <div class="col-lg-3 col-sm-6">
                     <div class="classes-item set-bg" data-setbg="img/classes/class-4.jpg">
                         <h4>CLASSIC BODY BALANCE</h4>
                         <p>The procedure is usually a preferred alternative to photorefractive keratectomy,</p>
-                        <a href="#" class="primary-btn class-btn">Read More</a>
                     </div>
                 </div>
             </div>
@@ -458,11 +450,11 @@
                             <li>Monthly</li>
                             <li>
                                 <label class="switch">
-                                    <input type="checkbox" checked>
+                                    <input type="checkbox" id="checbox" onclick="check()" ; />
                                     <span class="slider"></span>
                                 </label>
                             </li>
-                            <li>Years</li>
+                            <li>Yearly</li>
                         </ul>
                     </div>
                 </div>
@@ -472,8 +464,8 @@
                     <div class="single-price-plan">
                         <h4>Normal</h4>
                         <div class="price-plan">
-                            <h2>55 <span>$</span></h2>
-                            <p>Monthly</p>
+                            <h2 class="text1">&dollar;55</h2>
+                            <h2 class="text2">&dollar;590</h2>
                         </div>
                         <ul>
                             <li>Unlimited access to the gym</li>
@@ -488,8 +480,9 @@
                     <div class="single-price-plan">
                         <h4>Professional</h4>
                         <div class="price-plan">
-                            <h2>95 <span>$</span></h2>
-                            <p>Monthly</p>
+                            <h2 class="text1">&dollar;95</h2>
+                            <h2 class="text2">&dollar;950</h2>
+
                         </div>
                         <ul>
                             <li>Unlimited access to the gym</li>
@@ -507,8 +500,9 @@
                     <div class="single-price-plan">
                         <h4>Advanced</h4>
                         <div class="price-plan">
-                            <h2>165 <span>$</span></h2>
-                            <p>Monthly</p>
+                            <h2 class="text1">&dollar;165</h2>
+                            <h2 class="text2">&dollar;1750</h2>
+
                         </div>
                         <ul>
                             <li>Unlimited access to the gym</li>
@@ -640,6 +634,25 @@
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/masonry.pkgd.min.js"></script>
     <script src="js/main.js"></script>
+
+    <!-- Js Pricing plan -->
+    <script>
+        function check() {
+            var checkBox = document.getElementById("checbox");
+            var text1 = document.getElementsByClassName("text1");
+            var text2 = document.getElementsByClassName("text2");
+            for (var i = 0; i < text1.length; i++) {
+                if (checkBox.checked == true) {
+                    text1[i].style.display = "block";
+                    text2[i].style.display = "none";
+                } else if (checkBox.checked == false) {
+                    text1[i].style.display = "none";
+                    text2[i].style.display = "block";
+                }
+            }
+        }
+        check();
+    </script>
 </body>
 
 </html>

@@ -1,0 +1,33 @@
+#button-register {
+    font-size: 16px;
+    color: #ffffff;
+    font-weight: 600;
+    width: 100%;
+    background: -webkit-gradient(linear,
+            left top,
+            right top,
+            from(#eb3c5a),
+            to(#f67831));
+    background: -o-linear-gradient(left, #eb3c5a, #f67831);
+    background: linear-gradient(to right, #eb3c5a, #f67831);
+    border: none;
+    padding: 12px 0;
+    cursor: pointer;
+    margin-top: 30px;
+    width: 20%;
+    margin-bottom: 1em;
+}
+
+input[type=text],
+input[type=email] {
+    background: white;
+    padding: 25px;
+    margin: 5px 0 22px 0;
+
+}
+
+input[type=text]:focus,
+input[type=email]:focus {
+    background-color: whitesmoke;
+    outline: none;
+}

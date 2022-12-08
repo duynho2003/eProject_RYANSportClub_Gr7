@@ -97,89 +97,75 @@
   <!-- Breadcrumb End -->
 
   <!-- Enquiry Form Start -->
-  <div class="container">
-    <div class="row" style="margin-top: 3em;">
-      <div class="col-lg-12">
-        <div class="section-title">
-          <h1>MEMBERSHIP RYAN SPORT CLUB</h1>
-          <p></p>
-          <h3>Thinking about joining? We’ve a range of membership options to suit everyone.
-            You’ll always find an activity to meet your fitness needs! </h3>
-        </div>
-      </div>
-    </div>
-  </div>
+  <section class="vh-100 gradient-custom">
+    <div class="container py-5 h-100">
+      <div class="row justify-content-center align-items-center h-100">
+        <div class="col-12 col-lg-9 col-xl-7">
+          <div class="card shadow-2-strong card-registration" style="border-radius: 15px;">
+            <div class="card-body p-4 p-md-5">
+              <h3 class="mb-4 pb-2 pb-md-0 mb-md-5">Registration Form</h3>
+              <form>
 
+                <div class="row">
+                  <div class="col-md-6 mb-4">
+                    <div class="form-group">
+                      <label for="firstname"><b>First Name</b></label>
+                      <input type="text" class="form-control" name="firstname" required>
+                    </div>
+                  </div>
 
-  <div class="row">
-    <div class="col-lg-2"></div>
+                  <div class="col-md-6 mb-4">
+                    <div class="form-group">
+                      <label for="lastname"><b>Last Name</b></label>
+                      <input type="text" class="form-control" name="lastname" required>
+                    </div>
+                  </div>
 
-    <div class="col-lg-8" id="form-register">
-      <hr>
-      <form action="">
-        <div class="form-group">
-          <label for="firstname"><b>First Name</b></label>
-          <input type="text" class="form-control" placeholder="Enter First Name" name="firstname" required>
-        </div>
+                  <div class="col-md-6 mb-4">
+                    <div class="form-group">
+                      <label for="email"><b>Email</b></label>
+                      <input type="email" class="form-control" name="email" required>
+                    </div>
+                  </div>
 
-        <div class="form-group">
-          <label for="lastname"><b>Last Name</b></label>
-          <input type="text" class="form-control" placeholder="Enter Last Name" name="lastname" required>
-        </div>
+                  <div class="col-md-6 mb-4">
+                    <div class="form-group">
+                      <label for="phone"><b>Phone number</b></label>
+                      <input type="tel" class="form-control" name="tel" required>
+                    </div>
+                  </div>
 
-        <div class="form-group">
-          <label for="email"><b>Email</b></label>
-          <input type="email" class="form-control" placeholder="Enter Email" name="email" required>
-        </div>
+                </div>
+                
+                <div class="row">
+                  <div class="col-12">
+                    <label for="membership"><b>Membership Type:</b></label>
+                    <br>
+                    <select class="select form-control-lg">
+                      <option value="option" disabled>Monthly</option>
+                      <option value="Normal">Normal ($55)</option>
+                      <option value="Professional">Professional ($95)</option>
+                      <option value="Advanced">Advanced ($165)</option>
+                      <option value="option" disabled>Yearly</option>
+                      <option value="Normal">Normal ($590)</option>
+                      <option value="Professional">Professional ($950)</option>
+                      <option value="Advanced">Advanced ($1750)</option>
+                    </select>  
+                  </div>
+                </div>
 
-        <div class="form-group">
-          <label for="phone"><b>Phone</b></label>
-          <input type="text" class="form-control" placeholder="Enter Phone Number" name="phone" required>
-        </div>
+                <div class="mt-4 pt-2">
+                  <button type="submit" class="register-btn" id="button-register" onclick="myFunction()">Get Started</button>
+                </div>
 
-        <label for="membershiptype"><b>Membership Type:</b></label>
-        <br>
-        <select name="membershiptype" id="membershiptype">
-          <option value="Normal">Normal</option>
-          <option value="Standard">Standard</option>
-          <option value="Prenium">Prenium</option>
-        </select>
-        <br> <br>
-
-        <label for="class"><b>Class:</b></label>
-        <br>
-        <select name="class" id="class">
-          <option value="cycling">Cycling</option>
-          <option value="swimming">Swimming</option>
-          <option value="sportandfitness">Sport And Fitness</option>
-          <option value="groupexercise">Group Exercise</option>
-        </select> <br> <br>
-
-        <label for="about"><b>About Your RYAN Sport Club:</b></label> <br>
-        <textarea name="about" id="about" cols="50" rows="5"></textarea>
-
-        <br>
-        <button type="submit" class="register-btn" id="button-register" onclick="myFunction()">Get Started</button>
-      </form>
-    </div>
-  </div>
-  <!-- Enquiry Form End -->
-
-  <!-- Cta Section Begin -->
-  <section class="cta-section">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12">
-          <div class="cta-text">
-            <h3>Get Started Today</h3>
-            <p>New student special! $30 unlimited Gym for the first week anh 50% of our member!</p>
+              </form>
+            </div>
           </div>
-          <a href="#" class="primary-btn cta-btn">book now</a>
         </div>
       </div>
     </div>
   </section>
-  <!-- Cta Section End -->
+  <!-- Enquiry Form End -->
 
   <!-- Footer Section Begin -->
   <footer class="footer-section">
@@ -257,6 +243,34 @@
   <script src="js/masonry.pkgd.min.js"></script>
   <script src="js/main.js"></script>
   <script src="js/scrollprogress.js"></script>
+
+  <script>
+    var toggleInputContainer = function (input) {
+      if (input.value != "") {
+        input.classList.add('filled');
+      } else {
+        input.classList.remove('filled');
+      }
+    }
+
+    var labels = document.querySelectorAll('.label');
+    for (var i = 0; i < labels.length; i++) {
+      labels[i].addEventListener('click', function () {
+        this.previousElementSibling.focus();
+      });
+    }
+
+    window.addEventListener("load", function () {
+      var inputs = document.getElementsByClassName("input");
+      for (var i = 0; i < inputs.length; i++) {
+        console.log('looped');
+        inputs[i].addEventListener('keyup', function () {
+          toggleInputContainer(this);
+        });
+        toggleInputContainer(inputs[i]);
+      }
+    });
+  </script>
 </body>
 
 </html>

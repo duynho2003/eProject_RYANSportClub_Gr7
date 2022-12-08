@@ -1,33 +1,56 @@
+.gradient-custom {
+  /* fallback for old browsers */
+  background: #f093fb;
+
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-linear-gradient(to bottom right, rgba(240, 147, 251, 1), rgba(245, 87, 108, 1));
+
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(to bottom right, black, rgba(245, 87, 108, 1))
+}
+
+.card-registration .select-input.form-control[readonly]:not([disabled]) {
+  font-size: 1rem;
+  line-height: 2.15;
+  padding-left: .75em;
+  padding-right: .75em;
+}
+
+.card-registration .select-arrow {
+  top: 13px;
+}
 #button-register {
-    font-size: 16px;
-    color: #ffffff;
-    font-weight: 600;
-    width: 100%;
-    background: -webkit-gradient(linear,
-            left top,
-            right top,
-            from(#eb3c5a),
-            to(#f67831));
-    background: -o-linear-gradient(left, #eb3c5a, #f67831);
-    background: linear-gradient(to right, #eb3c5a, #f67831);
-    border: none;
-    padding: 12px 0;
-    cursor: pointer;
-    margin-top: 30px;
-    width: 20%;
-    margin-bottom: 1em;
+  font-size: 16px;
+  color: #ffffff;
+  font-weight: 600;
+  width: 100%;
+  background: -webkit-gradient(linear,
+          left top,
+          right top,
+          from(#eb3c5a),
+          to(#f67831));
+  background: -o-linear-gradient(left, #eb3c5a, #f67831);
+  background: linear-gradient(to right, #eb3c5a, #f67831);
+  border: none;
+  padding: 12px 0;
+  cursor: pointer;
+  margin-top: 30px;
+  width: 20%;
+  margin-bottom: 1em;
 }
 
 input[type=text],
-input[type=email] {
-    background: white;
-    padding: 25px;
-    margin: 5px 0 22px 0;
+input[type=email],
+input[type=tel] {
+  background: #f1f1f1;
+  padding: 25px;
+  margin: 5px 0 22px 0;
 
 }
 
 input[type=text]:focus,
-input[type=email]:focus {
-    background-color: whitesmoke;
-    outline: none;
+input[type=email]:focus,
+input[type=tel]:focus {
+  background-color: #ddd;
+  outline: none;
 }

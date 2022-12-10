@@ -13,16 +13,17 @@
 .card-registration .select-arrow {
   top: 13px;
 }
+
 #button-register {
   font-size: 16px;
   color: #ffffff;
   font-weight: 600;
   width: 100%;
   background: -webkit-gradient(linear,
-          left top,
-          right top,
-          from(#eb3c5a),
-          to(#f67831));
+      left top,
+      right top,
+      from(#eb3c5a),
+      to(#f67831));
   background: -o-linear-gradient(left, #eb3c5a, #f67831);
   background: linear-gradient(to right, #eb3c5a, #f67831);
   border: none;
@@ -33,18 +34,75 @@
   margin-bottom: 1em;
 }
 
-input[type=text],
+/* input[type=text],
 input[type=email],
-input[type=tel] {
+input[type=tel],
+input[type=password] {
   background: #f1f1f1;
-  padding: 25px;
+  padding: 10px;
   margin: 5px 0 22px 0;
-
 }
 
 input[type=text]:focus,
 input[type=email]:focus,
-input[type=tel]:focus {
+input[type=tel]:focus,
+input[type=password]:focus{
   background-color: #ddd;
   outline: none;
+} */
+
+form .register-txt_field {
+  position: relative;
+  border-bottom: 2px solid var(--color-light);
+  margin: 30px 0;
+}
+
+.register-txt_field input {
+  width: 100%;
+  padding: 0 5px;
+  height: 40px;
+  font-size: 16px;
+  border: none;
+  background: none;
+  outline: none;
+  color: var(--color-light);
+}
+
+.register-txt_field label {
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  color: var(--color-light);
+  transform: translateY(-50%);
+  font-size: 16px;
+  pointer-events: none;
+  transition: .5s;
+}
+
+.register-txt_field span::before {
+  content: '';
+  position: absolute;
+  top: 40px;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background: var(--violet);
+  transition: .5s;
+}
+
+.register-txt_field input:focus~label,
+.register-txt_field input:not(:placeholder-shown)~label {
+  top: -5px;
+  color: var(--violet);
+}
+
+.register-txt_field input:focus~span::before,
+.register-txt_field input:not(:placeholder-shown)~span::before {
+  width: 100%;
+}
+
+form .register-txt_field {
+position: relative;
+border-bottom: 2px solid #adadad;
+margin: 30px 0;
 }

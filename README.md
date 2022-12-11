@@ -4,7 +4,7 @@ Origami for all Batch no.: T1.2208.A0
 
 CENTER NAME: ACE-HCMC-2-FPT
 
-Project title: RYAN Sports CLub
+Project title: RYAN Sports Club
 
 ========> Group 7 <=========
 

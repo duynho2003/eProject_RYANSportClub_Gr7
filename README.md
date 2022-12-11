@@ -1,18 +1,18 @@
 # eProject_Ryan-Sport-CLub
 
-Origami for all Batch no.: T1.2208.A0
+Origami for all Batch no: T1.2208.A0
 
 CENTER NAME: ACE-HCMC-2-FPT
 
-Project title: Ryan Sport CLub
+Project title: RYAN Sports Club
 
 ========> Group 7 <=========
 
 3 collaborators:
 
         Nguyen Anh Duy          (khenchaynguyen@gmail.com)      Student1408049
-        Le Tan Kha              (@gmail.com)    Student1408043
-        Le Thi Hoa Dang         (@gmail.com)    Student1405212
+        Le Tan Kha              (khadapda2@gmail.com)    Student1408043
+        Le Thi Hoa Dang         (hoadang0727@gmail.com)    Student1405212
 ============================
 
 github report link: https://github.com/duynho2003/eProject_RYANSportClub_Gr7/tree/master/Document

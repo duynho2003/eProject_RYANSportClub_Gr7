@@ -1,6 +1,6 @@
 # eProject_Ryan-Sport-CLub
 
-Origami for all Batch no.: T1.2208.A0
+Origami for all Batch no: T1.2208.A0
 
 CENTER NAME: ACE-HCMC-2-FPT
 
